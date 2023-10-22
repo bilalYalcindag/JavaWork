@@ -43,7 +43,7 @@ public class DosyaIslemleri {
     }
     
     public void DosyaYaz(File file, Araba araba) throws IOException{
-        FileWriter fileWriter = new FileWriter(file);
+        FileWriter fileWriter = new FileWriter(file,true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         
         bufferedWriter.write(araba.marka + " " + araba.model + " " + araba.renk + " "
